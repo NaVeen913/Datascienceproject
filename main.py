@@ -1,3 +1,12 @@
 from src.datascience import logger
+from src.datascience.pipeline.data_ingestion import DataIngestionTrainingPipeline
 
-logger.info("welcome to our custom logging data science")
+if __name__ == "__main__":
+    try:
+        pipeline = DataIngestionTrainingPipeline()
+        pipeline.run()
+    except Exception as e:
+        logger.exception(e)
+        raise e
+
+
