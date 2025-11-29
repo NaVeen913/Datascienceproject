@@ -15,3 +15,15 @@ class DataValidationConfig:
     STATUS_FILE: str
     unzip_data_dir: Path
     all_schema: dict
+    
+from dataclasses import dataclass
+from pathlib import Path
+
+# ... your existing configs ...
+
+@dataclass
+class DataTransformationConfig:
+    root_dir: Path
+    data_path: Path
+    train_data_path: Path
+    test_data_path: Path
