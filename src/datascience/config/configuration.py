@@ -35,8 +35,8 @@ class ConfigurationManager:
     
 
     def get_data_validation_config(self) -> DataValidationConfig:
-        config = self.config.data_validation   # 👈 IMPORTANT
-        schema = self.schema                   # 👈 to grab COLUMNS
+        config = self.config.data_validation   
+        schema = self.schema                   
 
         create_directories([config.root_dir])
 
@@ -44,6 +44,6 @@ class ConfigurationManager:
             root_dir=Path(config.root_dir),
             STATUS_FILE=config.STATUS_FILE,
             unzip_data_dir=Path(config.unzip_data_dir),
-            all_schema=schema.COLUMNS         # 👈 pass schema columns
+            all_schema=schema.COLUMNS         
         )
         return data_validation_config
