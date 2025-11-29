@@ -1,1 +1,9 @@
-key: value
+COLUMNS:
+  sepal length (cm): float64
+  sepal width (cm): float64
+  petal length (cm): float64
+  petal width (cm): float64
+  target: int64
+
+TARGET_COLUMN:
+  name: target
