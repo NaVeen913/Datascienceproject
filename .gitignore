@@ -25,3 +25,5 @@ artifacts/
 logs/
 data.zip
 *.csv
+
+__pycache__/
