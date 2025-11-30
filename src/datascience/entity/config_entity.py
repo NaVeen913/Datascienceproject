@@ -39,3 +39,14 @@ class ModelTrainerConfig:
     train_data_path: Path
     test_data_path: Path
     model_name: str
+
+from dataclasses import dataclass
+from pathlib import Path
+
+@dataclass
+class ModelEvaluationConfig:
+    root_dir: Path
+    test_data_path: Path
+    model_path: Path
+    metric_file_name: Path
+
