@@ -3,3 +3,25 @@ logs/
 artifacts/
 __pycache__/
 *.pyc
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+venv/
+.env/
+
+# IDE
+.vscode/
+.idea/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Project-specific
+artifacts/
+logs/
+data.zip
+*.csv
